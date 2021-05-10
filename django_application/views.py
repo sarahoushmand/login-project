@@ -24,9 +24,6 @@ def register(request):
             user.save()
 
             registered = True
-        else:
-            # This section gotta change
-            print(user.errors)
     else:
         form = CreateUserForm()
 
